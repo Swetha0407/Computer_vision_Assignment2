@@ -1,0 +1,100 @@
+{
+  "dataset": "30 deterministic synthetic scenes",
+  "working_resolution": "512x384",
+  "tasks": {
+    "1": {
+      "samples": 30,
+      "methods": [
+        "linear stretch",
+        "gamma",
+        "log"
+      ]
+    },
+    "2": {
+      "samples": 30,
+      "methods": [
+        "global equalization",
+        "CLAHE",
+        "histogram matching"
+      ]
+    },
+    "3": {
+      "samples": 30,
+      "methods": [
+        "mean",
+        "median",
+        "bilateral"
+      ]
+    },
+    "4": {
+      "samples": 30,
+      "methods": [
+        "Laplacian",
+        "unsharp masking",
+        "high-boost"
+      ]
+    },
+    "5": {
+      "samples": 30,
+      "methods": [
+        "ideal LPF",
+        "Butterworth LPF",
+        "Gaussian LPF"
+      ]
+    },
+    "6": {
+      "samples": 30,
+      "methods": [
+        "ideal HPF",
+        "Butterworth HPF",
+        "Gaussian HPF"
+      ]
+    },
+    "7": {
+      "samples": 30,
+      "methods": [
+        "Sobel",
+        "Prewitt",
+        "Canny"
+      ]
+    },
+    "8": {
+      "samples": 30,
+      "methods": [
+        "global threshold",
+        "Otsu",
+        "adaptive"
+      ]
+    },
+    "9": {
+      "samples": 30,
+      "methods": [
+        "seeded region growing",
+        "connected components",
+        "watershed"
+      ]
+    },
+    "10": {
+      "samples": 30,
+      "methods": [
+        "contour chaining",
+        "morphological linking",
+        "region-edge fusion"
+      ]
+    }
+  },
+  "numerical_answers": {
+    "task1_linear_stretch": 72.8571,
+    "task2_cumulative_probability_through_level3": 0.50495,
+    "task3_mean": 38,
+    "task3_median": 25,
+    "task4_unsharp_output": 100,
+    "task5_gaussian_lpf_radius30_cutoff20": "relatively suppressed",
+    "task6_complementary_hpf": 0.7,
+    "task7_gradient_magnitude": 64.03124237432849,
+    "task8_precision": 0.75,
+    "task8_recall": 0.833333,
+    "task9_total_area_pixels": 550,
+    "task10_boundary_link_success_rate": 0.85
+  }
+}
